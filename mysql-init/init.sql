@@ -13,7 +13,17 @@ CREATE TABLE `achivments` (
 	`info` VARCHAR(1000),
 	PRIMARY KEY (`id`)
 );
-INSERT INTO achivments VALUE (NULL, 'Дизайн-проект "Умный дом"', 'Руководил проектом "Умный дом" в течении 3ех лет, ссылка на Figma//...'); 
-INSERT INTO achivments VALUE (NULL, 'Олимпиада русский медвежонок 2012', 'Занял 3 место'); 
-INSERT INTO achivments VALUE (NULL, 'Медаль за археологиеческие достижения', 'Откопал ядро Земли'); 
-INSERT INTO achivments VALUE (NULL, 'Успешно поднядся с кровати и пришел на пару', 'Важнейшее из достижений! Молодец!');
+INSERT INTO achivments VALUE (NULL, 'Юрий"', 'Руководил проектом "Умный дом" в течении 3ех лет, ссылка на Figma//...'); 
+INSERT INTO achivments VALUE (NULL, 'Алексей', 'Занял 3 место'); 
+INSERT INTO achivments VALUE (NULL, 'Александр', 'Откопал ядро Земли'); 
+INSERT INTO achivments VALUE (NULL, 'Георгий', 'Важнейшее из достижений! Молодец!');
+
+CREATE TABLE `typesAchivments` (
+	`id` INT NOT NULL AUTO_INCREMENT,
+	`type` VARCHAR(200),
+	`name` VARCHAR(1000),
+	PRIMARY KEY (`id`)
+);
+
+INSERT INTO typesAchivments VALUE (NULL, 'Творческое"', 'Руководил проектом "Умный дом" в течении 3ех лет, ссылка на Figma//...'); 
+INSERT INTO typesAchivments VALUE (NULL, 'Спортивное', 'Занял 3 место в соревновании по бегу'); 
